@@ -3,5 +3,14 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Portfolio",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+  ],
 };
